@@ -9,3 +9,5 @@ if ((a % 2 !== 0 || b % 2 !== 0 || c % 2 !== 0)) {
   eImpar = true;
 };
 console.log(eImpar);
+
+// importante para o projeto
