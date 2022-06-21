@@ -1,4 +1,4 @@
-let a = -8;
+let a = 8;
 
 if (a > 0) {
   console.log("Positivo");
