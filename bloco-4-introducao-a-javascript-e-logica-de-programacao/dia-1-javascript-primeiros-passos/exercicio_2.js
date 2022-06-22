@@ -2,7 +2,7 @@ let a = 8;
 let b = 4;
 
 if (a > b) {
-  console.log("Maior");
+  console.log("'a' é maior que 'b'");
 } else {
-  console.log("Menor");
+  console.log("'b' é maior que 'a'");
 }
