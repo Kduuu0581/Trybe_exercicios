@@ -73,8 +73,13 @@
             texto.innerHTML = 'Exercício 5.1 - JavaScript';
         }
         corrigeTexto();
-            //  Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
-        //  Crie uma função que exiba o conteúdo de todas as tags <p> no console.
+        //  Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
+       function textoMaiusculo() {
+        let paragrafo = document.getElementsByTagName ('p') [0]
+        paragrafo.innerHTML = paragrafo.innerHTML.toUpperCase();
+       }
+       textoMaiusculo();
+            //  Crie uma função que exiba o conteúdo de todas as tags <p> no console.
     </script>
 </body>
 
