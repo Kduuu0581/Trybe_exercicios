@@ -79,7 +79,14 @@
         paragrafo.innerHTML = paragrafo.innerHTML.toUpperCase();
        }
        textoMaiusculo();
-            //  Crie uma função que exiba o conteúdo de todas as tags <p> no console.
+         //  Crie uma função que exiba o conteúdo de todas as tags <p> no console.
+            function mostraParagrafos() {
+                let paragrafos = document.getElementsByTagName ('p');
+                for (let index = 0; index < paragrafos.length; index+=1) {
+                    console.log(paragrafos[index]).innerHTML;
+                }
+            }
+            mostraParagrafos();
     </script>
 </body>
 
