@@ -20,6 +20,8 @@
   
   h1 {
   font: small Tahoma;
+  margin: 1px 0 0 0;
+  text-align: center;
   }
   
   h2 {
@@ -35,7 +37,8 @@
   }
   
   section {
-  
+   
+    
   }
   
   figure {
