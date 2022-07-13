@@ -45,8 +45,8 @@
   
   figure {
       margin: 0;
-      width: 20px;  
-      
+      width: 20px; 
+      margin-right: 20px;
   }
   
   figcaption {
@@ -57,7 +57,7 @@
     body{
       background-color: red;
       font-size: smaller;
-      margin: auto;
+      margin: 25px;
 
     }
   }
