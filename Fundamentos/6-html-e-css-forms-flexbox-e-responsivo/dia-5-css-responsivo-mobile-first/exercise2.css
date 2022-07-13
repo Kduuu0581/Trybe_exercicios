@@ -1,0 +1,55 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.container {
+    display: flex;
+}
+
+p {
+    padding: 20px;
+}
+
+/* Primeiro breakpoint e os estilos definidos para ele */
+
+@media screen and(max-width:600px) {
+    body{
+        background-color: aqua;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .container{
+        flex-direction: column;
+    }
+    p{
+        padding: 10px;
+        line-height: 1.5em;
+    }
+}
+
+/* Segundo breakpoint e os estilos definidos para ele */
+@media screen and(min-width:600px) {
+    body{
+        background-color: blue;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .container{
+        flex-wrap: wrap;
+    }
+}
+
+/* Terceiro breakpoint e os estilos definidos para ele */
+@media screen and(min-width:1000px) {
+    body{
+        background-color: springgreen;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    }
+    .container{
+        flex-wrap: nowrap;
+    }
+}
