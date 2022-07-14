@@ -37,11 +37,6 @@ console.log(
 );
 // será necessário alterar essa linha 😉
 
-const fatorial = (integer) => {
-let fatorial = 1;
-for (let index = 1; index < integer; index+=1) {
-  fatorial *= index;
-  }
-  return fatorial;
-};
-console.log(fatorial(5));
+const longestWord = (text) => text.split(' ').sort((wordA, wordB) => wordB.length - wordA.length)[0];
+
+console.log(longestWord('Antonio foi ao banheiro e não sabemos o que aconteceu'));
