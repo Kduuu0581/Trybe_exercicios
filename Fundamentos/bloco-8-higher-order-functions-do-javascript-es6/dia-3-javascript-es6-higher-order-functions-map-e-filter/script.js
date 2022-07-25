@@ -143,4 +143,12 @@ function autoresFiccaoOuFantasia() {
 function livrosMaisVelhos() {
     return livros.filter((livros) => livros.releaseYear > 1960).map((livros) => livros.name)};
 
-    
+//Encontre o nome do livro escrito pela pessoa cuko nome começa com 3 iniciais
+//Cada inicial termina com um ponto
+//Use a função filter
+
+const resultado3 = 'O Senhor dos Anéis';
+
+function autorCom3IniciaisNoNome() {
+  return livros.find((livro) => (livro.author.name.split(' ').filter((palavra) => (palavra.endsWith('.')).length === 3)).name);
+};
