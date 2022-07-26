@@ -114,21 +114,37 @@ const resultado3 = {
 function longestNamedBook() {
   return livros.reduce((acc, curr) => {
     if (curr.name.length > acc.name.length) {
-        return curr;
+      return curr;
     }
     return acc;
-    });
-  };
+  });
+}
 
 //5 - dada o array de nomes, retorne a quantidade de vezes em que aparece a letra a maiúscula ou minúscula
 //Use a função reduce
 
 const names = [
-    'Aanemarie', 'Adervandes', 'Akifusa',
-    'Abegildo', 'Adicellia', 'Aladonata',
-    'Abeladerco', 'Adieidy', 'Alarucha',
-  ];
-  
-  function containsA() {
-    // escreva seu código aqui
-  }
+  "Aanemarie",
+  "Adervandes",
+  "Akifusa",
+  "Abegildo",
+  "Adicellia",
+  "Aladonata",
+  "Abeladerco",
+  "Adieidy",
+  "Alarucha",
+];
+
+function containsA() {
+  return names.reduce(
+    (accLetraA, nome) =>
+      (accLetraA += nome
+        .split("")
+        .reduce(
+          (acc, letra) => (acc += letra === "a" || letra === "A" ? 1 : 0),
+          0
+        )),
+    0
+  );
+}
+console.log(containsA());
