@@ -150,5 +150,7 @@ function livrosMaisVelhos() {
 const resultado3 = 'O Senhor dos Anéis';
 
 function autorCom3IniciaisNoNome() {
-  return livros.find((livro) => (livro.author.name.split(' ').filter((palavra) => (palavra.endsWith('.')).length === 3)).name);
+  return livros.find((livro) => (livro.author.name.split(' ').filter((palavra) => 
+  (palavra.endsWith('.')).length === 3)).name);
 };
+
